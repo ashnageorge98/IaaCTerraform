@@ -1,5 +1,5 @@
 provider "azuread" {
-  features {}
+ # Assuming you are using the Azure AD provider for Azure Active Directory
 }
 
 # Define the Azure AD Application
@@ -15,7 +15,7 @@ resource "azuread_service_principal" "jenkins_sp" {
 # Define the Service Principal Password (client secret)
 resource "azuread_application_password" "jenkins_password" {
   application_id = azuread_application.jenkins_app.application_id
-  description     = "Jenkins Service Principal Secret"
+  display_name    = "Jenkins Service Principal Secret"
   end_date        = "2099-12-31T23:59:59Z"
 }
 
