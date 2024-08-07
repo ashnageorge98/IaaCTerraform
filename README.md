@@ -24,3 +24,14 @@ do the following:
 4. add terraform.tfstate to gitignore file (Ensure that sensitive files, such as terraform.tfstate, are included in your .gitignore file to prevent them from being accidentally committed:)
 5. git push origin main --force
 
+connect github PAT (developer settings) to jenkins credentials secret text, secrer field (past github pat)
+ or...
+generate ssh key in gitbash to github (settings ssh and gpg keys new ssh key) and add to jenkins creds- ssh username with private key username, private key field paste ssh key (rsa format)
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+cat ~/.ssh/id_rsa.pub
+
+
