@@ -27,3 +27,7 @@
         ├── main.tf
         ├── variables.tf
         └── outputs.tf
+    └── jenkins_ad
+        ├── main.tf
+        ├── variables.tf
+        └── outputs.tf
