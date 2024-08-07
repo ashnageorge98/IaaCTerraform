@@ -36,3 +36,6 @@ cat ~/.ssh/id_rsa.pub
 
 convert ssh-rsa key to PEM key to connect to azure vm via gitbash:
 ssh-keygen -e -m pem -f /c/Users/ashna/.ssh/keys.pub > /c/Users/ashna/Downloads/keyss.pem(keyss.pem is the newfilename to save ur private key)
+
+ssh-keygen command to generate rsa private key in pem format for below type of key to save as private key for azure pr aws vm to ssh via gitbash teminal
+ssh-keygen -t rsa -b 2048 -m PEM -f keyss
