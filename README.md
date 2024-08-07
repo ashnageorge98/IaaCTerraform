@@ -21,6 +21,6 @@ do the following:
 1. pip install git-filter-branch or git-filter-repo
 2. git filter-repo --path terraform.tfstate --invert-paths
 3. https://github.com/ashnageorge98/IaaCTerraform/security/secret-scanning/unblock-secret/2kJ4BE65Ey5DmhdCBkpLu4M0kXX --and allow saying its for test
-4. add terraform.tfstate to gitignore file
+4. add terraform.tfstate to gitignore file (Ensure that sensitive files, such as terraform.tfstate, are included in your .gitignore file to prevent them from being accidentally committed:)
 5. git push origin main --force
 
