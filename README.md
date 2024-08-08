@@ -42,3 +42,7 @@ ssh-keygen -e -m pem -f /c/Users/ashna/.ssh/keys.pub > /c/Users/ashna/Downloads/
 
 ssh-keygen command to generate rsa private key in pem format for below type of key to save as private key for azure pr aws vm to ssh via gitbash teminal
 ssh-keygen -t rsa -b 2048 -m PEM -f keyss
+
+
+to create a staging envt in azure: u can create a new resource group in azure via - az ---azure cli code
+or crate new dir staging-dr via gitbash in IaaCTerraform repo or use diff branches in github or use terrafoprm workspaces
