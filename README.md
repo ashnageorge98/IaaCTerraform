@@ -34,6 +34,9 @@ ssh-add ~/.ssh/id_rsa
 
 cat ~/.ssh/id_rsa.pub
 
+imp: Use the following ssh-keygen command to extract the SSH public key from the RSA private key.
+ssh-keygen -y -f private_key.pem > id_rsa.pub
+
 convert ssh-rsa key to PEM key to connect to azure vm via gitbash:
 ssh-keygen -e -m pem -f /c/Users/ashna/.ssh/keys.pub > /c/Users/ashna/Downloads/keyss.pem(keyss.pem is the newfilename to save ur private key)
 
