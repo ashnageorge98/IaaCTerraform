@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'github-ssh-key', url: 'https://github.com/ashnageorge98/IaaCTerraform.git'
+                checkout scmGit(branches: [[name: '*/main']], userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'https://github.com/ashnageorge98/IaaCTerraform.git']])
             }
         }
 
